@@ -19,8 +19,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <playwright.version>1.49.0</playwright.version>
         <testng.version>7.10.2</testng.version>
-        <assertj.version>3.26.3</assertj.version>
+        <assertj.version>3.27.7</assertj.version>
         <log4j.version>2.24.3</log4j.version>
+        <jackson.version>2.18.2</jackson.version>
         <maven.surefire.version>3.5.2</maven.surefire.version>
     </properties>
 
@@ -63,6 +64,13 @@
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-slf4j2-impl</artifactId>
             <version>${log4j.version}</version>
+        </dependency>
+
+        <!-- Jackson for JSON parsing in API tests -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackson.version}</version>
         </dependency>
     </dependencies>
 
